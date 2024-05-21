@@ -125,10 +125,7 @@ td:nth-child(7) {
 width: 5%;
 }
 
-th:nth-child(8),
-td:nth-child(8) {
-width: 5%;
-}
+
 /* Ẩn các ô dữ liệu có class 'hidden-column' */
 .hidden-column {
 display: none;
