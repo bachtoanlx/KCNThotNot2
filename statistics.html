@@ -117,7 +117,7 @@
             function fetchSheetData() {
                 gapi.client.sheets.spreadsheets.values.get({
                     spreadsheetId: '1SvIgfQfruhsLAQxTj3a3bN5KFx1s1todjYwa7EPusiQ',
-                    range: 'Sheet3!B2:H10'
+                    range: 'Sheet3!B2:H11'
                 }).then(function(response) {
                     var values = response.result.values;
 
@@ -135,8 +135,8 @@
                             }
                         });
 
-                        // Hiển thị dữ liệu ban đầu (chỉ hiển thị 8 dòng đầu)
-                        showDataRows(dataRows.slice(0, 8));
+                        // Hiển thị dữ liệu ban đầu (chỉ hiển thị 9 dòng đầu)
+                        showDataRows(dataRows.slice(0, 9));
                     } else {
                         console.log('No data found.');
                     }
@@ -169,7 +169,7 @@
             showAllButton.addEventListener('click', function() {
                 if (isExpanded) {
                     // Đang ở trạng thái đã mở rộng, cần thu gọn lại
-                    showDataRows(dataRows.slice(0, 8)); // Chỉ hiển thị 8 dòng đầu
+                    showDataRows(dataRows.slice(0, 9)); // Chỉ hiển thị 9 dòng đầu
                     showAllButton.textContent = 'Hiển thị tất cả'; // Đổi nội dung của nút
                     isExpanded = false; // Cập nhật trạng thái
                 } else {
