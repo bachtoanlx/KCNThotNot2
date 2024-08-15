@@ -117,7 +117,7 @@
             function fetchSheetData() {
                 gapi.client.sheets.spreadsheets.values.get({
                     spreadsheetId: '1SvIgfQfruhsLAQxTj3a3bN5KFx1s1todjYwa7EPusiQ',
-                    range: 'Sheet3!B12:G17'
+                    range: 'Sheet3!B12:G20'
                 }).then(function(response) {
                     var values = response.result.values;
 
