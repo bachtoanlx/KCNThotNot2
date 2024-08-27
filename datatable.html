@@ -327,6 +327,17 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
 
+        // Hiển thị các dòng đã lọc
+        showDataRows(filteredRows);
+    });
+        // Tải nội dung từ modals.html và chèn vào trang hiện tại
+        $(document).ready(function() {
+            $('#modals-container').load('modals.html', function() {
+                // Sau khi modals.html được tải và chèn vào DOM, tải script liên quan đến modal
+                $.getScript('modals_dangnhap.js');
+            });
+        });
+
 });    
 
 
