@@ -20,7 +20,7 @@ body {
 .content {
     position: relative;
     z-index: 1; /* Đảm bảo nội dung nằm trên hình nền */
-    color: white;
+    color: black;
     padding: 20px;
     text-align: center;
 }
