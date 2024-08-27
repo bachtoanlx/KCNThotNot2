@@ -315,6 +315,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     // Lắng nghe sự kiện khi nhập vào ô tìm kiếm
+    document.addEventListener('DOMContentLoaded', function() {
+    var searchInput = document.getElementById('searchInput');
+    searchInput.value = ''; // Đảm bảo rằng ô tìm kiếm trống khi tải trang
+});
+
     var searchInput = document.getElementById('searchInput');
     searchInput.addEventListener('input', function() {
         var searchText = searchInput.value.trim().toLowerCase(); // Lấy văn bản tìm kiếm
