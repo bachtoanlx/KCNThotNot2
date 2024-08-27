@@ -314,13 +314,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
-    // Tìm kiếm
-document.addEventListener('DOMContentLoaded', function() {
-    // Đảm bảo rằng ô tìm kiếm trống khi tải trang
+       // Lắng nghe sự kiện khi nhập vào ô tìm kiếm
     var searchInput = document.getElementById('searchInput');
-    searchInput.value = ''; // Xóa nội dung của ô tìm kiếm
-
-    // Lắng nghe sự kiện khi nhập vào ô tìm kiếm
     searchInput.addEventListener('input', function() {
         var searchText = searchInput.value.trim().toLowerCase(); // Lấy văn bản tìm kiếm
 
@@ -331,17 +326,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 return cellValue.toString().toLowerCase().includes(searchText);
             });
         });
-
-        // Hiển thị các dòng đã lọc
-        showDataRows(filteredRows);
-    });
-
-    // Tải nội dung từ modals.html và chèn vào trang hiện tại
-    $('#modals-container').load('modals.html', function() {
-        // Sau khi modals.html được tải và chèn vào DOM, tải script liên quan đến modal
-        $.getScript('modals_dangnhap.js');
-    });
-});
 
 });    
 
