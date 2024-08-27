@@ -13,7 +13,7 @@ body {
     background-image: url('https://meeymap.com/tin-tuc/wp-content/uploads/2022/12/khu-cong-nghiep-o-long-an-1536x729.jpg'); /* Đường dẫn đến hình ảnh */
     background-size: cover;
     background-position: center;
-    filter: blur(3px); /* Làm mờ hình nền */
+    filter: blur(2px); /* Làm mờ hình nền */
     z-index: -1; /* Đặt lớp hình nền phía sau nội dung */
 }
 
