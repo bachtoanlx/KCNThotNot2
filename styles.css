@@ -1,6 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://meeymap.com/tin-tuc/wp-content/uploads/2022/12/khu-cong-nghiep-o-long-an-1536x729.jpg'); /* Đường dẫn đến hình ảnh */
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px); /* Làm mờ hình nền */
+    z-index: -1; /* Đặt lớp hình nền phía sau nội dung */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Đảm bảo nội dung nằm trên hình nền */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
 #menu {
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -125,7 +150,10 @@ td:nth-child(7) {
 width: 5%;
 }
 
-
+th:nth-child(8),
+td:nth-child(8) {
+width: 5%;
+}
 /* Ẩn các ô dữ liệu có class 'hidden-column' */
 .hidden-column {
 display: none;
@@ -235,3 +263,4 @@ table, td {
     }
     }    
     } 
+
